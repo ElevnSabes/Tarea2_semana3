@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>Validacion de formularios</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/contac_validacion.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <nav class="header_nav">
+    <a href="index.html" class="logo"><img src="images/sample_logo_k.png"></a>
+    <ul class="global_nav">
+      <a href="index.html" class="global_nav_item">
+        <li>Home</li>
+       </a>
+      <a href="#menu" class="global_nav_item">
+        <li>Menu</li>
+      </a>
+       <a href="contact.html" class="global_nav_item">
+        <li>Contact</li>
+      </a>
+    </ul>
+  </nav>
+</header>
+<body>
+  <section class="section_inner">
+    <div class="section_title">
+      <h1>CONTACTO</h1>
+      <p>consulta</p>
+    </div>
+    <form action="#" method="POST" id="form">
+      <table class="contact">
+        <tr class="contact_line">
+          <td class="contact_sign"><label for="name">NAME</label></td>
+          <td class="contact_input"><input type="text" name="name" id="name"></td>
+        </tr>
+        <tr class="contact_line">
+          <td class="contact_sign"><label for="email">E-MAIL</label></td>
+          <td class="contact_input"><input type="email" name="email" id="email"></td>
+        </tr>
+        <tr class="contact_line">
+          <td class="contact_sign"><label for="email_confirm">E-MAIL(CONFIRMACION)</label></td>
+          <td class="contact_input"><input type="email" name="email_confirm" id="email_confirm"></td>
+        </tr>
+        <tr class="alert_row" id="alert_row">
+          <td colspan="2"><p id="alert" class="alert_color">El correo electrónico no coincide</p></td>
+        </tr>
+        <tr class="contact_content">
+          <td class="contact_sign"><label for="content">CONTENIDO</label></td>
+          <td class="contact_input"><textarea name="content" id="content"></textarea></td>
+        </tr>
+      </table>
+      <div class="contact_btn_area">
+        <button type="reset" class="contact_btn reset_btn">Borrar</button>
+        <button type="submit" class="contact_btn submit_btn">Enviar</button>
+      </div>
+    </form>
+  </section>
+  <footer class="footer">
+    <nav>
+      <ul class="footer_nav">
+        <a href="index.html" class="footer_nav_item">
+          <li>Home</li>
+        </a>
+        <a href="menu.html" class="footer_nav_item">
+          <li>Menu</li>
+        </a>
+        <a href="contact.html" class="footer_nav_item">
+          <li>Contact</li>
+        </a>
+        <a href="index.html" class="footer_nav_item">
+          <li>
+            <img src="images/sample_logo_w.png" class="footer_logo">
+          </li>
+        </a>
+      </ul>
+    </nav>
+    <p class="footer_right">© DIVE INTO CODE Corp. All RIGHTS RESERVED.</p>
+  </footer>
+  <script type="text/javascript" src="javascript/validacion.js"></script>
+</body>
+</html>
